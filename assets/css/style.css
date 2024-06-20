@@ -223,7 +223,8 @@ article.active {
 .h2,
 .h3,
 .h4,
-.h5 {
+.h5,
+.h6 {
   color: var(--white-2);
   text-transform: capitalize;
 }
@@ -237,6 +238,12 @@ article.active {
 .h5 {
   font-size: var(--fs-7);
   font-weight: var(--fw-500);
+}
+
+.h6 {
+  font-size: var(--fs-8);
+  font-weight: var(--fw-500);
+  align-self: flex-end;
 }
 
 .article-title {
@@ -868,6 +875,41 @@ main {
 }
 
 
+.download-cv-section {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.download-cv-button {
+  font-size: var(--fs-7);
+  font-weight: var(--fw-300);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: max-content;
+  padding: 10px 20px;
+  /* background-color: var(--text-gradient-yellow); */
+
+  background-color: var(--vegas-gold);
+  color: var(--light-gray);
+  text-decoration: none;
+  border-radius: 10px;
+  transition: background-color 0.3s ease;
+}
+
+.download-cv-button ion-icon {
+  margin-right: 8px;
+  justify-self: center;
+}
+
+.download-cv-button:hover {
+  background-color: var(--jet);
+  /* background-color: var(--vegas-gold); */
+}
+
 
 
 
@@ -1339,7 +1381,9 @@ textarea.form-input::-webkit-resizer { display: none; }
 
   .avatar-box { border-radius: 30px; }
 
-  .avatar-box img { width: 120px; }
+  .avatar-box img { 
+    width: 120px; 
+  }
 
   .info-content .name { margin-bottom: 15px; }
 
@@ -1831,11 +1875,16 @@ textarea.form-input::-webkit-resizer { display: none; }
     margin-bottom: 0;
     padding-top: 60px;
     z-index: 1;
+    width: 100%; /* Set the width to 100% */
+    max-width: 300px; /* Set a maximum width if desired */
   }
 
   .sidebar-info { flex-direction: column; }
 
-  .avatar-box img { width: 150px; }
+  .avatar-box img { 
+    width: 150px; 
+    border-radius: 20px;
+  }
 
   .info-content .name {
     white-space: nowrap;
