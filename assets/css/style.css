@@ -630,6 +630,22 @@ main {
 }
 
 .testimonials-avatar-box {
+  width: 60px; /* Adjust the width as necessary */
+  height: 60px; /* Adjust the height to maintain aspect ratio */
+  overflow: hidden;
+  border-radius: 50%; /* Optional: for round images */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.testimonials-avatar-box img {
+  width: 100%;
+  height: auto; /* Keeps the aspect ratio of the image */
+  object-fit: cover; /* Ensures the image covers the area without distortion */
+}
+
+.testimonials-avatar-box {
   position: absolute;
   top: 0;
   left: 0;
