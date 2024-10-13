@@ -1615,6 +1615,52 @@ textarea.form-input::-webkit-resizer {
     min-width: calc(33.33% - 35px);
   }
 
+  .hobbies-list {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    margin: 0;
+    list-style: none;
+    max-width: 800px; /* Adjust based on layout */
+    margin: auto; /* Center the list */
+  }
+
+  .hobbies-item {
+    background: #f8f9fa; /* Light grey background */
+    border: 1px solid #dee2e6; /* Light grey border */
+    padding: 20px;
+    margin-bottom: 20px; /* Space between items */
+    border-radius: 8px; /* Rounded borders */
+    display: flex;
+    align-items: center;
+  }
+
+  .hobby-icon-box {
+    width: 60px; /* Size of the icon box */
+    height: 60px;
+    margin-right: 20px; /* Space after the icon box */
+    flex-shrink: 0; /* Prevent the icon from shrinking */
+  }
+
+  .hobby-icon-box img {
+    width: 100%;
+    height: auto;
+    border-radius: 50%; /* Circular image */
+  }
+
+  .hobby-content-box {
+    flex: 1; /* Take the remaining space */
+  }
+
+  .h4 {
+    margin-bottom: 5px; /* Space between the title and text */
+  }
+
+  .hobby-item-text {
+    margin: 0; /* Remove margin for the paragraph */
+    color: #495057; /* Dark grey text */
+  }
+
   /**
    * #RESUME
    */
